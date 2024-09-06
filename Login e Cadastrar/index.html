@@ -3,35 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tela de Login e Cadastro</title>
-<link rel="stylesheet" href="style.css"> 
+<title>Formulário de Login e Cadastro</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
-<div class="form-container">
-<div class="close-button"></div>
+
+<div class="form-box">
+<div class="form-header">
 <h2>Login</h2>
-<input type="text" placeholder="Digite seu usuário">
-<input type="password" placeholder="Digite sua senha">
-<label>
-<input type="checkbox"> Exibir senha
-</label>
-<button>Entrar</button>
-<p>Não possui uma conta? <a href="#">Criar Nova Conta</a></p>
+<button class="close-btn">&times;</button>
 </div>
-<div class="form-container">
-<div class="close-button"></div>
+<form>
+<div class="input-group">
+<label for="login-username">Digite seu usuário</label>
+<input type="text" id="login-username" required>
+</div>
+<div class="input-group">
+<label for="login-password">Digite sua senha</label>
+<input type="password" id="login-password" required>
+<div class="show-password">
+<input type="checkbox" id="show-password-login">
+<label for="show-password-login">Exibir senha</label>
+</div>
+</div>
+<button type="submit" class="submit-btn">Entrar</button>
+</form>
+<p>Não possui uma conta? <a href="#"></a></p>
+<p><a href="#">Criar Nova Conta</a></p>
+</div>
+
+<div class="form-box">
+<div class="form-header">
 <h2>Cadastrar</h2>
-<input type="text" placeholder="Usuário">
-<input type="password" placeholder="Senha">
-<input type="password" placeholder="Confirmar senha">
-<label>
-<input type="checkbox"> Exibir senha
-</label>
-<button>Cadastrar</button>
-<p>Possui uma conta? <a href="#">Entrar no sistema</a></p>
+<button class="close-btn">&times;</button>
+</div>
+<form>
+<div class="input-group">
+<label for="signup-username">Usuário</label>
+<input type="text" id="signup-username" required>
+</div>
+<div class="input-group">
+<label for="signup-password">Senha</label>
+<input type="password" id="signup-password" required>
+</div>
+<div class="input-group">
+<label for="signup-confirm-password">Confirmar senha</label>
+<input type="password" id="signup-confirm-password" required>
+<div class="show-password">
+<input type="checkbox" id="show-password-signup">
+<label for="show-password-signup">Exibir senha</label>
 </div>
 </div>
+<button type="submit" class="submit-btn">Cadastrar</button>
+</form>
+<p>Possui uma conta? <a href="#"></a></p>
+<p><a href="#">Entrar no sistema</a></p>
+</div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
- 
